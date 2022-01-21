@@ -1,0 +1,11 @@
+<h1>Sobre Nos</h1>
+<hr/>
+
+<?php
+//echo 'Chegamos ao IndexController e disparamentos a action sobreNos';
+
+foreach($this->view->dados as $indice => $info) {
+    //echo var_dump($produto['descricao']);
+    echo $info['titulo'] . ' - ' . $info['descricao'] ;
+    echo '<br />';
+}
